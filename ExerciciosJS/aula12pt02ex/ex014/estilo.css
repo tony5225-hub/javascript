@@ -1,0 +1,29 @@
+body {
+background: rgb(70, 142, 236);
+font: 15 pt arial;
+}
+div{
+    text-align: center;
+    padding: 8px;
+}
+header{
+    /* nesta parte colocado para dar cor header e alinhar o texto */
+color: white;
+text-align: center;
+}
+
+section{
+background: white;/* nesta parte foi colocado todos estas tags para dar estilo no site: na div que esta escrito testanto foi inclouido estas tags para modificar toda este item branco do navegador*/
+border-radius: 10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+/* nesta parte colocado para dar cor footer e alinhar o texto */
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+}

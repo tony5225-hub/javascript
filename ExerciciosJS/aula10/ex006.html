@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title><!--Esse evento é tudo o que possa acontecer com a Div criada abaixo o mais comuns eventos de mouse ex: até encostar ou dentro da div  é efeito  MOUSEENTER, movendo mouse por dentro da div é o efeito MOUSEMOVE , se clicar e segurar mouse outro efeito MOUSEDOWN , quando soltar o botão do mouse outro efeito MOUSEUP se der click inteiro apertar e soltar efeito CLICK e se com mouseenter mover para fora da div tem efeito MOUSEOUT veja o print na pasta da aula 10 e se olhar neste link vc vera mais eventos alem desses de mouse que existe em Java script esse link de outros eventos : https://developer.mozilla.org/pt-BR/docs/Web/Events  -->
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: rgb(46, 219, 46);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center ; /* para por o interaja no meio da tela e a font veja navegador usei o line-height: 200px;
+            text-align: center ; font: normal 20pt Arial; com isso criamos uma estrutura no html embaixo div e emcima CSS com essas alterações anteriores. */
+
+
+        }
+    </style>
+</head>
+<body><!-- para mostrar um evento é feito uma função que é a function ( conjunto de códigos usados quando evento ocorrer se programar 10 linhas chamamos de bloco onde se coloca as chaves {}nomeando como function antes do bloco chamada de funcção anonima e para que possa funcionar tem que dar um nome para essa função que seria nomes de ações que podemos fazer e abre e fecha parenteses veja exemplo disparando um click , onmouseenter em html abaixo escrevendo no script do  java script e cria o bloco ex: function ação ()) usada em javascript-->
+
+      <!-- div id= "area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> este comando tbem pode ser modificado pelo listener ele vai susbstituir onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> área deixar o div id ="area" abaixo para funcionar pelo listener  ser para cada evento embaixo desse comando: var a = window.document.getElementById ('area') para que este omouseentere etc não precise ser digitado poluindo o html e fazer a interação HMTL e java script  -->
+        <div id= "area">
+        Interaja
+        </div>
+        
+    
+    <script>  // essa var ela  representa area para modificar no script o clicar mas pode ser colocada como var a , para disparar todo esses eventos no navegador de cima do html para mudar o interaja para "clicou" 'entrar' 'sair'  faz-se esse bloco modificando o style com as cores nos blocos clicar  a.style.background = 'red' e sair a.style = 'green  : OBS: FOI COLOCADO O var a = window.document.getElementById ('area') EM CIMA DO PRIMEIRO CLICAR QUE NÃO É PARA FAZER MAS PARA DAR OS COMANDOS ENTRA E SAIR PARA ESSE VAR FUNCIONAR COMO GERAL PARA TODOS.
+     var a = window.document.getElementById ('area')
+        a.addEventListener ('click', clicar )
+        a.addEventListener ('mouseenter', entrar)
+        a.addEventListener ('mouseout', sair)
+         function clicar()  {
+            a.innerText = 'clicou!!'
+            a.style.background = 'red'
+
+         
+      }
+        function entrar ()   {
+         a.innerText = 'entrou!!!'
+      }   
+      function sair (){
+          a.innerText = 'saiu!!!'
+          a.style = 'green'
+      }
+        
+    </script>
+</body>
+</html>

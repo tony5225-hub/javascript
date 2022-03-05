@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    Velocidade do Carro: <input type="number" name="txtvel" id="txtvel"> km/h <!--o name ele é representado para php e vamos utilizar o id para fazer este acesso-->
+    <input type="button" value="verificar " onclick="calcular()">
+    <div id = "res">
+
+    </div>
+    <script>
+                function calcular(){
+            var txtv = window.document.querySelector('input#txtvel')// aqui foi colocado pelo setor do java script querySelector que vai o # qualquer duvida olhar aula anterior sobre a forma de declarar a função 
+
+            var res = window.document.querySelector('div#res')// esse div com # é para div no css se fosse class seria ("ponto")
+            var vel = Number(txtv.value)
+            
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h </strong></p>`
+            if (vel>=60){
+                res.innerHTML += `<p> voce foi <strong>MULTADO</strong>;ultrapassou o limite de velocidade.` // no if onde representamos com += é se colocarmos só recebe "==" ele não vai mostrar as duas mensagens (sua velocida... e vc foi multado ...quando coocar a velocidade maior que )
+            }
+            
+            res.innerHTML += `<p> Dirija sempre com Cinto de Segurança.</p>`
+            
+            }
+    </script>        
+</body>
+</html>

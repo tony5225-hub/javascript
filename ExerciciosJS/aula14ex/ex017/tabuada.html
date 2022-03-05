@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title><!--uma estrutura para montar site ex: header/section e footter ai complemneta com h1 , div e parágrafo-->
+    <link rel="stylesheet" href="tabuada.css"><!--aqui segura tecla CTRL e clicar em estilo vai criar do lado o CSS-->
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div>
+            <p>Numero:
+                <input type="number" name="num" id="txtn" >
+                <input type="button" value="Gerar Tabuada" onclick=" tabuada()">
+            </p>
+            
+        </div>
+        <div>
+            <select name="tabuada" id="seltab" size= "11">
+                <option >Digite um Numero</option> <!--serve para aumentar no campo onde vai aparecer a tabuada-->
+            </select>
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; exTony Video </p>
+    </footer>
+    <script src="tabuada.js"></script><!--aqui foi criado script src que todos os scripts são criados embaixo de footer sempre embaixo como css depois que cria escreve script.js para abrir separado e no Script js cria alert ('Olá Mundo!!!')-->
+</body>
+</html>

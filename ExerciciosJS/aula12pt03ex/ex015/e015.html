@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title><!--uma estrutura para montar site ex: header/section e footter ai complemneta com h1 , div e parágrafo-->
+    <link rel="stylesheet" href="estilo.css"><!--aqui segura tecla CTRL e clicar em estilo vai criar do lado o CSS-->
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name ="txtano" id ="txtano" min ="0">
+            </p>
+            <p>sexo
+                <input type="radio" name = "radsex" id = "masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+           Preencha os dados
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Curso em Video </p>
+    </footer>
+    <script src="script.js"></script><!--aqui foi criado script src que todos os scripts são criados embaixo de footer sempre embaixo como css depois que cria escreve script.js para abrir separado e no Script js cria alert ('Olá Mundo!!!')-->
+</body>
+</html>

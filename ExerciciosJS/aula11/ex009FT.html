@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou estrangeiro</title>
+</head>
+<body>
+    <h1>País</h1>    
+    Pais de nascimento: <input type="pais" name="txtpais" id="txtpais"> 
+    <input type="button" value="verificar " onclick="calcular()">
+    <div 
+        id = "res">
+      
+    </div>
+    <script>
+            function calcular(){
+            var txtv = window.document.querySelector('input#pais')// aqui foi colocado pelo setor do java script querySelector que vai o # qualquer duvida olhar aula anterior sobre a forma de declarar a função 
+
+            var res = window.document.querySelector('div#res')// esse div com # é para div no css se fosse class seria ("ponto")
+            
+            var pais = 'Brasil'
+                       
+            res.innerHTML = `<p>Vc é brasileiro  <strong>${pais} </strong></p>`
+            if (pais == 'Brasil' ){
+                            
+            }
+                else { 
+                    res.innerHTML += `<p>Vc é Estrangeiro  <strong>${pais} </strong></p>`
+                }
+          
+                        
+            }
+    </script>
+</body>
+</html>

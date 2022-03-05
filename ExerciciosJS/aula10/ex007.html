@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 18pt arial;/* para escrever no navegador com uma fonte um CSS para estilizar o navegador; css é criado sempre depois do title*/
+        }
+        input {
+            font: normal 18pt arial;/* para escrever no navegador com uma fonte e uma largura width um CSS para estilizar o navegador; css é criado sempre depois do title*/
+            width: 100px ;
+        }
+        div#res {
+            margin-top: 10px;/* para escrever no navegador com espaço colocou esta div com margem */
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>//OBS: ENTENDENDO TUDO ISSO SENDO ESCRITO A FRENTE POIS EMCIMA ( INPUT TYPE...) É O QUE  DIGITA NO HTML PARA VER NO NAVEGADOR E EMBAIXO AS FORMULAS PARA FUNCIONAR HTML E FORMULAS: quando abre a function tem que por o que vai fazer ex.somar parenteses e abrir as chaves para script não aparecer com erro e lembrar se der erro olhar no console do navegador o que esta mostrando:OBS AQUI FOI DEMONSTRADO O window.document.getElementById('txtn1') E window.document.querySelector('input#txtn2') PARA MOSTRAR QUE OS DOIS COMANDOS FUNCIONAM PODERIA SER OS GET ID OU GET SELECTOR PARA FAZER A SOMA (DUVIDA ASSISTA AULA ANTERIOR)
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre  ${n1} e ${n2} é igual a <strong> ${s}</strong>` // para não esquecer `´ string interpoloda para mostrar ${n1} em azul como acima, aqui colocamos um strong para representar no navegador a soma em negrito
+        }
+    </script>
+</body>
+</html>

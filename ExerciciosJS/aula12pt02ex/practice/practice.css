@@ -1,0 +1,17 @@
+body{
+    background: rgb(70, 142, 236); /* aqui quando quiserm mudar para rgb colocar mouse emcima da ncor ex. Blue */
+    font: normal 15pt arial; /* a font vai ser sempre normal e 15 pt */
+    
+    
+}
+header{
+    
+}
+section{
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+footer{
+
+}

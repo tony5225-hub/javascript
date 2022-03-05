@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title><!--uma estrutura para montar site ex: header/section e footter ai complemneta com h1 , div e parágrafo-->
+    <link rel="stylesheet" href="contar.css"><!--aqui segura tecla CTRL e clicar em estilo vai criar do lado o CSS-->
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div id = "dados">
+            <p>Inicio:
+            <input type="number" name ="inicio" id ="txti" min ="0">
+            </p>
+            <p>Fim:
+            <input type="number" name="fim" id="txtf" min="0">
+            </p>
+            <p> Passo:
+                <input type="number" name="passo" id="txtp">
+            </p>
+            <p>
+                <input type="button" value="contar" onclick="contar()">
+            </p>
+            </div>
+        <div id="res">
+            Preparando a contagem   
+        </div>
+    </section>
+    <footer>
+        <p>&copy;exTony Video </p>
+    </footer>
+    <script src="contar.js"></script><!--aqui foi criado script src que todos os scripts são criados embaixo de footer sempre embaixo como css depois que cria escreve script.js para abrir separado e no Script js cria alert ('Olá Mundo!!!')-->
+</body>
+</html>
