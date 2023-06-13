@@ -1,69 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros passos com Dom</title>
-    <style>
-        body{
-        background: rgb(68, 125, 199)
-        ;     
-        color: white;      
-        font: normal 18pt Arial;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos  com Dom</title>
+  <style>
+    body {
+      background-color: rgb(69, 69, 238);
+      color: white;
+      font: normal 15pt arial;
+      
+    }
+  </style>
 </head>
 <body>
-  <h1>Iniciando estudos com DOM</h1><!--
-    MODULOC ENTENDENDO DOM ex 005: ou seja: Document Object Model
-para usar live server aparecer no navegador usuar este link: https://www.ti-enxame.com/pt/visual-studio-code/como-mudar-o-navegador-padrao-com-o-codigo-vs-live-server-do-vs-code/837536285/ OU  PARA APARECER QUANDO ABRIR O VSCODE > Vá para Arquivos> Preferências> Configurações / cole esse caminho liveServer.settings.CustomBrowser /selecione chrome.
-
-Arvore Dom:  ela começa da raiz chamada: window dentro do window temos objetos Location(localização site: URL PG)document (documento atual) /history( de onde vc veio para onde vc vai para facilitar navegação dentro do site pelo Java script).
-
-Dentro Document existe o objeto Html 
-Dentro de Html (pai)- temos dois filhos or child:  Head (cabeçario) e body (corpo)
-Dentro de  Head temos as tags: meta /titlle
-Dentro do body: h1 , parágrafos div onde vamos colocando o que vai acontecendo no site 
-
-OBS:Arvore Hierarquica mostra anotações acima que é do site que acabamos de criar (iniciando estudos com DOM  : veja no print em anotações pasta JS é a estrutura do site : DOCUMENT/HTML/HEAD/BODY/META/TITLE/H1/P/P/DIV/STRONG 
-ELEMENTOS: São todos os retangulos que apareceram no print da arvore e podemos selecionar vários elementos para navegar na arvore DOM 5 metodos: por Marca (get ElementByTagname da para fazer várias seleções de tags para modificar o que ja esta feito no site com este comando(),ID,Nome,Classe e Seletor(CSS ) quando veja no print
-agora continuando vamos selecionar por id que exemplo é a div veja abaixo e criação dela get element como no comando getElementById aparece no singular não precisa ser com colchete como getElementsByTagName
-
-  -->  
-  <p>Aqui vai o resultado</p>
-  <p>aprendendo a usar o <strong>DOM</strong> em Javascript </p>
-  <div class="msg">Clique em mim </div>
+  <h1>Iniciando estudos DOM</h1> <!--o que é Dom? è Acrônimo para Document Object Model (Modelo de Objeto para Documentos)um conjunto de objetos dentro do Navegador que vai dar acesso aos  componentes interno do web site  ele não funciona dentro do node JS ele funciona somente quando esta rodando dentro do navegador no site -->
+  <p>aqui vai o resultado</p>
+  <p>Aprendendo a usar o <strong>DOM</strong> em Java Script</p>
+  <div>Clique em mim</div>
   <script>
-    var p1 = window.document.getElementsByTagName ('p')[0]
-    
-    /* comando usado para selecionar tags no caso paragráfo como tem dois o colchete identifica com 0 o primeiro parágrafo E embaixo no comando window.document.write dentro dos parenteses p1 identificando no navegador 
-    window.document.write('Esta escrito assim: ' + p1.innerText)
-    */    
-    /* p1.style.color ='blue'  nesta tag vai mostrar: aqui vai resuiltado em azul no navegador  */
-   /* aqui vai mostrar fundo do navegador preto começa comando var:  var corpo = window.document.body   
-   corpo.style.background = 'black'
-        
-   /*document.write(p1.innerHTML)   /aqui vai mostrar dentro (p1.innerHTML) ele mostra em html mais se mudar pa innerText muda para texto no caso ai iria mostrar no navegador apreendendo DOM em negrito */
-   
-   // var d = window.document.getElementById ('msg')
-  //  d.style.background = 'green'
-    //d.innerText = 'Estou aguardando'
-   
-  //var d = window.document.getElementsByName ("msg")[0] 
-  //d.innerText = 'class'
-  // pode usar aqui ao invés de id o name, class como mudado em cima onde era id <div id ="msg">Clique em mim </div>
-   //var d = window.document.getElementsByClassName("msg")[0]
-   //d.innerText = 'funcionou com class'
-   
-   // como mostrado nos itens acima os 5 elementos agora serão mostrados no comando abaixo o último seletor mais recente  (querySelector('div#msg')que é comando mais novo que é recomendavel pelos manuais pois faz mudanças rápidas no site  veja exemplo. aqui esta com que é id= div#msg que é do css se fosse pelo da classe seria pelo ponto 'div.msg' vejam as representações e a modificação no navegador OBS: para modificar tanto com id e class  veja que modificado acima:<div id="msg" <div class="msg"
-   
-
-   //var d = window.document.querySelector('div#msg')
-   //d.style.background= 'blue'
-
-   var d = window.document.querySelector('div.msg')
-   d.style.background= 'blue'
+    window.document
   </script>
 </body>
 </html>
