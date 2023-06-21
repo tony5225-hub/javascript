@@ -2,25 +2,36 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primeiros passos  com Dom</title>
+  <title>Site com Java Script</title>
   <style>
     body {
-      background-color: rgb(69, 69, 238);
-      color: white;
-      font: normal 15pt arial;
+      background-color: rgb(100, 70, 31);
+      color: rgb(223, 191, 191);
+      font: normal 15pt arial
       
+    }
+    h1 {
+      color:rgb(71, 233, 225)
     }
   </style>
 </head>
 <body>
-  <h1>Iniciando estudos DOM</h1> <!--o que é Dom? è Acrônimo para Document Object Model (Modelo de Objeto para Documentos)um conjunto de objetos dentro do Navegador que vai dar acesso aos  componentes interno do web site  ele não funciona dentro do node JS ele funciona somente quando esta rodando dentro do navegador no site -->
-  <p>aqui vai o resultado</p>
-  <p>Aprendendo a usar o <strong>DOM</strong> em Java Script</p>
-  <div>Clique em mim</div>
+  <h1>Inserindo as formas onde devem no site</h1>
+  <p>Um parágrafo para exemplo <strong>DOM</strong>   </p>
+  <p>Outro parágrafo para testar</p>
   <script>
-    window.document
+    alert('Olá Mundão!!!')
+   // var corpo = document.body // uma variável utilizando o Dom para mudar a cor do corpo do navegador 
+    //corpo.style.background = 'black' // variável e com  exemplo do Dom mudando para preto o corpo do site
+  var p1 = document.getElementsByTagName('p')[0] // para aparecer o paragráfo precisa digitar somente p entre parenteses
+  document.write(p1.innerHTML) // para escrever o paragráfo digitar document.write e depois p1 quando o p1 é digitado com ponto vc digita I e vai mostrar innerText ou InnerHTML assim se digitar HTML ele coloca seu paragrafo ja formatado na tela dentro dom parágrafo para poder mostrar no navegador isso serve tbem para alert(p1.innerHtml ou innerText)
+
+  //p1.style.color = 'blue' // comando para deixar primeiro paragráfo azul
+  var n1 = Number(prompt('digite um número'))
+  var n2 = Number(prompt('digite um número'))
+  var s = (n1+n2)
+  alert(`A soma entre ${n1} e ${n2} é ${s}`)// alert sempre para mostrar o resultado.
   </script>
 </body>
 </html>
