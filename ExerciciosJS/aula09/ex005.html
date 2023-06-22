@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inserindo  o Dom</title>
+    <style>
+        body {
+            background-color: burlywood;
+            color: rgb(219, 47, 47);
+            font: normal 15pt arial
+        }
+        h1 {
+            color:rgb(105, 120, 153)
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a fazer site com DOM</h1>
+    <p>utilizando <strong>DOM</strong></p>
+    <P>Mostrar linhas para exemplo</P>
+    <div id = "msg">Clique em mim </div> <!--aqui vai mostrar como representa com id uma tag-->
+    <!--<div name = "msg">clique em mim </div> aqui mostrando com name -->
+    <script>
+     //   alert('Olá Mundão!!!') // deixei como exemplo tirando essas duas // da esquerda volta o exemplo
+     var d = document.querySelector('div#msg')// mostrando com comando query selector esse ('div#msg') quando é com # é por Id e se for por class ('div.msg') para mostrar com class basta mudar comando acima  <div id = "msg">Clique em mim para class <div class = "msg">Clique em mim e no var d = document.querySelector('div.msg')OBS: ESSE querySelector É MÉTODO MAIS RECENTE ALGUNS NAVEGADORES MAIS ANTIGOS PODEM NÃO RODAR O QUERY SELECTOR.
+     d.style.color = 'blue'//mostrar só azul
+     //d.style.background = 'blue' //mostrar background azul
+    //var p1 = document.getElementsByTagName('p')[0]
+      // document.write(p1.innerHTML)
+    //var d = document.getElementById   ('msg') // aqui é a variável sendo declarada.
+    //d.style.background = 'green' // esta variável sendo executda para reseltar green no navegador  
+    //d.innerText = 'Estou aguardando' // posso alterar o texto da div de msg para esta frase.
+    //var corpo = document.body //deixei como exemplo tirando essas duas // da esquerda volta o exemplo
+    //corpo.style.background = 'black' // deixei como exemplo tirando essas duas // da esquerda volta o exemplo 
+    //var d = window.document.getElementsByName('msg')[0] // aqui mostrando por name  com get elementsByname e como tem plural colocar colchete para declarar o primeiro elemento 
+    //d.innerText = 'Olá'
+    //p1.style.color = 'blue' // deixei como exemplo tirando essas duas // da esquerda volta o exemplo
+   //var n1 = Number(prompt('digite um número')) // deixei como exemplo tirando essas duas // da esquerda volta o exemplo
+   // var n2 = Number(prompt('digite um número')) // deixei como exemplo tirando essas duas // da esquerda volta o exemplo
+   // var s = (n1+n2) // deixei como exemplo tirando essas duas // da esquerda volta o exemplo
+   // alert(`a Soma entre ${n1} e ${n2} é ${s}`) // deixei como exemplo tirando essas duas // da esquerda volta o exemplo
+    </script>
+</body>
+</html>
