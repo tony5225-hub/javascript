@@ -16,12 +16,12 @@
     <h1>Iniciando estudos Dom</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div class = 'msg'>Clique em mim</div>
+    
     <script>
-        window.document.write("Olá Mundo!!!")
-        window.document.write(window.document.charset)
-        window.document.write (window.navigator.appName)
-
+        
+        var d = window.document.querySelector ('div.msg')
+        d.style.background = 'orange'
     </script>
     
 </body>
