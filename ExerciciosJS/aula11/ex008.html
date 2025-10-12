@@ -9,8 +9,8 @@
 <body>
     <h1>Sistemas de Multas</h1>
     Velocidade do Carro: <input type="number" name="txtvel" id="txtvel"> km/h <!--o name ele é representado para php e vamos utilizar o id para fazer este acesso-->
-    <input type="button" value="verificar " onclick="calcular()">
-    <div id = "res">
+    <input type="button" value="verificar " onclick="calcular()"> <!--botão onclick para interação com página-->
+    <div id = "res"> 
 
     </div>
     <script>
@@ -22,10 +22,11 @@
             
             res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h </strong></p>`
             if (vel>=60){
-                res.innerHTML += `<p> voce foi <strong>MULTADO</strong>;ultrapassou o limite de velocidade.` // no if onde representamos com += é se colocarmos só recebe "==" ele não vai mostrar as duas mensagens (sua velocida... e vc foi multado ...quando coocar a velocidade maior que )
+                res.innerHTML += `<p> voce foi <strong>MULTADO</strong>;ultrapassou o limite de velocidade.` // no if onde representamos com += é se colocarmos só recebe "==" ele não vai mostrar as duas mensagens (sua velocida... e vc foi multado ...quando inserir a velocidade maior que )
             }
             
-            res.innerHTML += `<p> Dirija sempre com Cinto de Segurança.</p>`
+                res.innerHTML += `<p> Dirija sempre com Cinto de Segurança.</p>`
+            
             
             }
     </script>        
