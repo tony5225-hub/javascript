@@ -11,23 +11,20 @@
     Pais de nascimento: <input type="pais" name="txtpais" id="txtpais"> 
     <input type="button" value="verificar " onclick="calcular()">
     <div id = "res" ></div>
-      
-    
-    <script>''
+          
+    <script>
             function calcular(){
             var txtv = document.querySelector('input#pais');// aqui foi colocado pelo setor do java script querySelector que vai o # qualquer duvida olhar aula anterior sobre a forma de declarar a função 
 
             var res = document.querySelector('div#res');// esse div com # é para div no css se fosse class seria ("ponto")
             
             var pais = 'Brasil';
-           
-                      
+                                 
            if (pais === 'Brasil' ) {
                res.innerHTML = `<p>Vc é Brasileiro  <strong>${pais} </strong></p>`;
                                            
             }
-                
-            else {
+           else {
                res.innerHTML = `<p>Vc é Estrangeiro  <strong>${pais} </strong></p>`; 
                 
             }   
