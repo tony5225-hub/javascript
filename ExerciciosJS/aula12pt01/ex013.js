@@ -1,6 +1,6 @@
 var agora = new Date()
 var diaSem = agora.getDay()
-//diaSem = 7 se deixar este comando mostra como vc quer utilizar personalizado como quero que seja do dia automático fica o comando var diaSem = agora.getDay()
+//diaSem =  se deixar este comando mostra como vc quer mas como quero que seja do dia automático fica os comandos var agora = new Date() e var diaSem = agora.getDay()
 /* 
 0 = domingo
 1 = segunda
@@ -20,10 +20,10 @@ switch (diaSem){
     break
     case 2:
     console.log ('terça') 
-    break 
+    break
     case 3:
     console.log ('quarta')
-    break 
+    break
     case 4: 
     console.log ('quinta')
     break
@@ -32,8 +32,8 @@ switch (diaSem){
     break
     case 6:
     console.log ('sábado') 
-    break  
+     break
     default:
     console.log ('[Erro] Dia inválido')
-    break       
+          
 }
