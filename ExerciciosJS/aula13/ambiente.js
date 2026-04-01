@@ -7,7 +7,7 @@ c++
 
 
 
-/* esse código abaixo é o de estrutura while(enquanto), que testa primeiro e executa depois, acima vai ser representado a estrutura repetição Do (faça)
+/* esse código abaixo é o de estrutura while(enquanto)que testa primeiro e executa depois, acima vai ser representado a estrutura repetição Do (faça)
 var c = 1 
 while (c<=5) { // aqui onde insere c<=2 se colocar somente c<2 ele vai mostrar só uma vez 
     console.log (` hoje é sabado ${c}  `  ) // se quiser colocar o número de vezes para aparecer
