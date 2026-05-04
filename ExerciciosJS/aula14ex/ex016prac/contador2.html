@@ -12,11 +12,11 @@
         <h1>Contar </h1>
     </header>
     <section>
-        <div id="dados">
-            <p>Inicio: <input type="number" name="Inicio" id="txti"></p>
-            <p>Fim: <input type="number" name="fim" id="txtf"></p>
-            <p>Passo: <input type="number" name="passo" id="txtp"></p>
-            <p><input type="button" value="Contar"></p>
+        <div id = "dados">
+            <p>Inicio: <input type="number" name="Inicio" id="txti" min = "0"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf" min = "0"></p>
+            <p>Passo: <input type="number" name="passo" id="txtp" min = "0"></p>
+            <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
         <div id="res">
             Preparando a contagem
@@ -25,6 +25,6 @@
     <footer>
         <p>&copy;Curso em Video </p>
     </footer>
-    <script src="script.js"></script><!--aqui foi criado script src que todos os scripts são criados embaixo de footer sempre embaixo como css depois que cria escreve script.js para abrir separado e no Script js cria alert ('Olá Mundo!!!')-->
+    <script src="contador2.js"></script><!--aqui foi criado script src que todos os scripts são criados embaixo de footer sempre embaixo como css depois que cria escreve script.js para abrir separado e no Script js cria alert ('Olá Mundo!!!')-->
 </body>
 </html>
