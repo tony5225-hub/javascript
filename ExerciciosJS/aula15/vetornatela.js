@@ -18,7 +18,10 @@ for(let pos = 0; pos < valores.length; pos++){
 */
 // e aqui vamos mostrar de modo mais simplificado o comando acima.
 
+
+
 for (let pos in valores){
     console.log(`a posição ${pos} tem valor ${valores[pos]}`)
 }
+
 // esta sintaxe só funciona para array e objetos.
